@@ -34,7 +34,16 @@ const char      c_sHeadless[]       = "-headless";          // headless command 
 // globals
 std::vector<char*>  vsStudentNames;
 
-
+/*
+my testing functions
+*/
+int test(){
+	Fl_Window window(200,200,"Window title");
+    //Fl_Box mybox(0, 0, 100, 100, "");
+	
+	window.show();
+    return Fl::run();
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -44,7 +53,7 @@ std::vector<char*>  vsStudentNames;
 void MakeNames()
 {
     // ************ ADD YOUR NAME HERE ****************************************
-    //vsStudentNames.push_back("Your name here!");
+    vsStudentNames.push_back("Thong M. Doan");
 }// MakeNames
 
 
@@ -79,6 +88,9 @@ static int Arg_Callback(int argc, char *argv[], int &i)
 ///////////////////////////////////////////////////////////////////////////////
 int main(int argc, char *argv[])
 {
+	//my test functions
+	//return test();
+
     int script_arg;
 
     // Do argument processing. At the end of this, script_arg contains
