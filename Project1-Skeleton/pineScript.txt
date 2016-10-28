@@ -1,0 +1,19 @@
+load zcolorcheck.tga
+comp-over zred.tga
+save tmp1.tga
+
+load zcolorcheck.tga
+comp-in zred.tga
+save tmp2.tga
+
+load zcolorcheck.tga
+comp-out zred.tga
+save tmp3.tga
+
+load zcolorcheck.tga
+comp-atop zred.tga
+save tmp4.tga
+
+load zcolorcheck.tga
+comp-xor zred.tga
+save tmp5.tga

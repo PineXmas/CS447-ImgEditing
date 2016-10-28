@@ -1,0 +1,163 @@
+load colors-for-bw.tga
+gray
+save colors-for-bw-gray.tga
+
+load church.tga
+quant-unif
+save church-quant-unif.tga
+
+load wiz.tga
+quant-unif
+save wiz-quant-unif.tga
+
+load church.tga
+quant-pop
+save church-quant-pop.tga
+
+load wiz.tga
+quant-pop
+save wiz-quant-pop.tga
+
+load church.tga
+dither-thresh
+save church-dither-thresh.tga
+
+load church.tga
+dither-bright
+save church-dither-bright.tga
+
+load church.tga
+dither-rand
+save church-dither-rand.tga
+
+
+load church.tga
+dither-cluster
+save church-dither-cluster.tga
+
+load church.tga
+dither-fs
+save church-dither-fs.tga
+
+
+
+load church.tga
+filter-box
+save church-filter-box.tga
+
+load checkers.tga
+filter-box
+save checkers-filter-box.tga
+
+load church.tga
+filter-bartlett
+save church-filter-bartlett.tga
+
+load checkers.tga
+filter-bartlett
+save checkers-filter-bartlett.tga
+
+load church.tga
+filter-gauss
+save church-filter-gauss.tga
+
+load checkers.tga
+filter-gauss
+save checkers-filter-gauss.tga
+
+load church.tga
+filter-gauss-n 9
+save church-filter-gauss-n.tga
+
+load checkers.tga
+filter-gauss-n 11
+save checkers-filter-gauss-n.tga
+
+load church.tga
+filter-edge
+save church-filter-edge.tga
+
+load checkers.tga
+filter-edge
+save checkers-filter-edge.tga
+
+load gray-checkers.tga
+filter-edge
+save gray-checkers-filter-edge.tga
+
+
+
+load church.tga
+half
+save church-half.tga
+
+load checkers.tga
+half
+save checkers-half.tga
+
+load church-small.tga
+double
+save church-small-double.tga
+
+load checkers-small.tga
+double
+save checkers-small-double.tga
+
+load church.tga
+scale 0.8
+save church-scale.tga
+
+load checkers.tga
+scale 1.5
+save checkers-scale.tga
+
+load church.tga
+rotate 30
+save church-rotate.tga
+
+load checkers.tga
+rotate 75
+save checkers-rotate.tga
+
+load zcolorcheck.tga
+comp-over zred.tga
+save zcolorcheck-comp-over.tga
+
+load zcolorcheck.tga
+comp-in zred.tga
+save zcolorcheck-comp-in.tga
+
+load zcolorcheck.tga
+comp-out zred.tga
+save zcolorcheck-comp-out.tga
+
+load zcolorcheck.tga
+comp-atop zred.tga
+save zcolorcheck-comp-atop.tga
+
+load zcolorcheck.tga
+comp-xor zred.tga
+save zcolorcheck-comp-xor.tga
+
+load church.tga
+npr-paint
+save church-npr-paint.tga
+
+load wiz.tga
+npr-paint
+save wiz-npr-paint.tga
+
+
+load church.tga
+filter-enhance
+save church-filter-enhance.tga
+
+load checkers.tga
+filter-enhance
+save checkers-filter-enhance.tga
+
+load gray-checkers.tga
+filter-enhance
+save gray-checkers-filter-enhance.tga
+
+end 

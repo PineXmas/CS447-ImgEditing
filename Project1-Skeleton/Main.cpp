@@ -34,15 +34,17 @@ const char      c_sHeadless[]       = "-headless";          // headless command 
 // globals
 std::vector<char*>  vsStudentNames;
 
-/*
-my testing functions
-*/
-int test(){
-	Fl_Window window(200,200,"Window title");
-    //Fl_Box mybox(0, 0, 100, 100, "");
+void test2(int a){
 	
-	window.show();
-    return Fl::run();
+}
+
+//
+// my testing functions
+//
+int test(){
+
+	test2(2);
+	return 0;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -137,7 +139,7 @@ int main(int argc, char *argv[])
     if (!bHeadless)
     {
         // using the gui so create our window and the image widget
-        Fl_Window   window(350, 100, "CS447 Project 1");
+        Fl_Window   window(350, 100, "CS447 Project 1 - Thong Doan");
         Fl::visual(FL_RGB);
         window.begin();
             ImageWidget* pWidget = new ImageWidget(0, 0, 350, 100, "Image");

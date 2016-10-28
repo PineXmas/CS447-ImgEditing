@@ -67,12 +67,14 @@ class TargaImage
         bool Double_Size();
         bool Resize(float scale);
         bool Rotate(float angleDegrees);
+	// my helper functions
+		void GetOriginPixel(int currRow, int currCol, unsigned char* rgba);
 
     private:
 	// helper function for format conversion
         void RGBA_To_RGB(unsigned char *rgba, unsigned char *rgb);
 
-        // reverse the rows of the image, some targas are stored bottom to top
+    // reverse the rows of the image, some targas are stored bottom to top
 	TargaImage* Reverse_Rows(void);
 
 	// clear image to all black
@@ -80,6 +82,20 @@ class TargaImage
 
 	// Draws a filled circle according to the stroke data
         void Paint_Stroke(const Stroke& s);
+
+	// my helper functions
+		unsigned char CalculateGrayscale(unsigned char r, unsigned char g, unsigned char b );
+		void RGB2Index(unsigned char r, unsigned char g, unsigned char b, int* index, int* iRed, int* iGreen, int* iBlue);
+		void SortHistogram(int arr[], int arrR[], int arrG[], int arrB[], int size);
+		void Swap(int* a, int* b);
+		int FindHistogramNearestColor(int arrR[], int arrG[], int arrB[], unsigned char r, unsigned char g, unsigned char b);
+		double EuclidDistance(double r, double g, double b, double r2, double g2, double b2);
+		bool Dither_Threshold(double threshold);
+		bool Filter_Matrix(int** matrix, int size);
+		void ApplyFilter(int** matrix, int size, double matrixSum, unsigned char* rgb, int currRow, int currCol);
+		double CalculateMatrixSum(int** maxtrix, int size);
+		int** Gen2DMatrix(int* matrix1D, int size);
+		int* GenGaussian1DMatrix(int n);
 
     // members
     public:
